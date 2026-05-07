@@ -1,0 +1,38 @@
+# ── Virtual environment ────────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── PyInstaller build output ───────────────────────────────────────
+dist/
+build/
+
+# ── Python bytecode ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Pytest cache ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── App runtime logs (written to %LOCALAPPDATA%) ───────────────────
+*.log
+logs/
+
+# ── OS noise ───────────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ── Editor / IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── PyInstaller spec working files (not the spec itself) ───────────
+*.toc
+*.pkg
+*.pyz

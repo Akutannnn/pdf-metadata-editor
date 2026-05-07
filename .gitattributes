@@ -1,0 +1,13 @@
+# Normalize line endings to LF in the repo; git handles checkout conversion.
+* text=auto eol=lf
+
+# PowerShell scripts must use CRLF on Windows or they can fail to execute.
+*.ps1 text eol=crlf
+
+# Treat compiled/binary assets as binary — never mangle them.
+*.ico  binary
+*.exe  binary
+*.dll  binary
+*.pyd  binary
+*.pyz  binary
+*.pyc  binary
