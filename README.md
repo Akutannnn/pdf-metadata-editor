@@ -7,13 +7,8 @@ Right-click any PDF in Windows Explorer → **Edit metadata** → edit and save.
 
 ## Screenshots
 
-> **[Screenshot: Main window — form pre-filled with PDF metadata]**
->
-> **[Screenshot: Dirty state — Save button enabled, field values changed]**
->
-> **[Screenshot: Explorer context menu — "Edit metadata" entry]**
->
-> **[Screenshot: No-file state — "Open PDF File…" prompt]**
+<img src="/assets/image1.png" alt="image1" width="350" />
+<img src="/assets/image2.png" alt="image1" width="350" />
 
 ---
 
