@@ -231,25 +231,3 @@ Explorer "%1" argument
 | XMP sync failure | Logged as a warning; docinfo (the primary metadata store) is always written. Non-fatal. |
 | Malformed existing date | Displayed as-is in the form. User can correct it; it will be normalized on save. |
 | No file argument at launch | Shows "Open PDF File…" button — click to pick a file via the system dialog. |
-
----
-
-## Manual QA checklist
-
-- [ ] **Open from Explorer:** right-click a PDF → "Edit metadata" → window appears with correct filename in title bar
-- [ ] **Pre-fill:** all existing metadata fields are populated; empty fields are blank (not "None")
-- [ ] **Dirty state:** Save/Reset buttons disabled initially; enabling only after editing a field
-- [ ] **Save:** click Save → file written, "Saved" indicator appears, buttons reset to disabled
-- [ ] **Reset:** edit fields → click Reset → fields restored to last-saved values
-- [ ] **Ctrl+S:** save via keyboard shortcut
-- [ ] **Date validation:** enter "not-a-date" in Creation Date → red helper text; Save blocked
-- [ ] **Date normalization:** enter "2024-06-15" → after save, date stored as PDF format `D:...`
-- [ ] **Unicode path:** open a PDF in a path with accents (e.g. `C:\Résumés\`) → loads correctly
-- [ ] **Unicode values:** set Author to `Ångström` → saves and reloads correctly
-- [ ] **Read-only file:** attempt to save a read-only PDF → clear error dialog
-- [ ] **Locked file:** attempt to save a PDF open exclusively in Acrobat → locked-file error
-- [ ] **No argument:** launch `PDFMetadataEditor.exe` with no args → "Open PDF File…" state
-- [ ] **Non-PDF argument:** launch with a .txt file → "Not a PDF file" error dialog
-- [ ] **Close with unsaved:** edit a field → close window → "Save / Discard / Cancel" prompt
-- [ ] **No temp files:** confirm no `.pme_*` files remain in the PDF's folder after save
-- [ ] **Same path:** confirm the PDF's full path and filename are unchanged after save
